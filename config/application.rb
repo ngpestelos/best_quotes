@@ -1,9 +1,12 @@
-require 'rulers'
+require "rulers"
+
+$LOAD_PATH << File.join(File.dirname(__FILE__),
+                        "..", "app",
+                        "controllers")
+
+require "quotes_controller"
 
 module BestQuotes
   class Application < Rulers::Application
   end
-
-  # This uses Ruler's Array class
-  # puts [1,2,3,4,5].sum 
 end
