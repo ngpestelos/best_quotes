@@ -1,13 +1,15 @@
 PATH
   remote: ../rulers
   specs:
-    rulers (0.0.3)
+    rulers (0.0.4)
+      erubis
       rack
 
 GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.0.9)
+    erubis (2.7.0)
     method_source (0.8.1)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
