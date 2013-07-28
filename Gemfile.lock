@@ -1,8 +1,9 @@
 PATH
   remote: ../rulers
   specs:
-    rulers (0.0.4)
+    rulers (0.0.5)
       erubis
+      multi_json
       rack
 
 GEM
@@ -11,6 +12,7 @@ GEM
     coderay (1.0.9)
     erubis (2.7.0)
     method_source (0.8.1)
+    multi_json (1.7.7)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
