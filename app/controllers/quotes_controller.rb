@@ -1,15 +1,4 @@
 class QuotesController < Rulers::Controller
-  def show
-    quote = FileModel.find(params["id"])
-    ua = request.user_agent
-    render_response :quote, :obj => quote, :ua => ua
-  end
-
-  def index
-    quotes = FileModel.all
-    render :index, :quotes => quotes
-  end
-
   def a_quote
     render :a_quote, :noun => :winking
   end
@@ -17,6 +6,17 @@ class QuotesController < Rulers::Controller
   def quote_1
     quote_1 = FileModel.find(1)
     render :quote, :obj => quote_1
+  end
+
+  def index
+    quotes = FileModel.all
+    render :index, :quotes => quotes
+  end
+
+  def show
+    quote = FileModel.find(params["id"])
+    ua = request.user_agent
+    render_response :quote, :obj => quote, :ua => ua
   end
 
   def new_quote
